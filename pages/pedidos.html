@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/styles/pedidos_style.css">
+    <title>Pedidos</title>
+    <script src="../resources/script.js"></script>
+</head>
+
+<body>
+
+    <center>
+        <nav>
+            <ul class="navl">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/cafes.html">Cafés</a></li>
+                <li><a href="../pages/upps.html">Tés</a></li>
+                <li><a href="../pages/upps.html">Bebidas</a></li>
+                <li><a href="../pages/upps.html">Sandwich</a> </li>
+                <li><a href="../pages/upps.html">Frutos Secos</a> </li>
+                <div style="float: right;">
+                    <li class="active"><a href="../pages/pedidos.html">Pedidos</a> </li>
+                    <li><a href="../pages/reservas.html">Reservas</a> </li>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <a href="../index.html"><img src="../resources/images/logo.jpg" alt="Logotipo Por Amor Al Arte" width="100" id="logo" /></a>
+        <h1 class="texto">Haga su pedido</h1>
+        <hr>
+        <h2 class="texto"> <strong>A continuación, inserte sus datos:</strong> </h2>
+        <form onsubmit="validateFormPedido()" name="pedido">
+            <label for="name" class="texto" ><strong>Nombre: </strong> <br></label>
+            <input type="text" id= "name" style="width: 75%;" placeholder="Pepe Juan" required> <br>
+            <label for="name" class="texto"><strong>Apellidos:</strong> <br></label>
+            <input type="text" id= "last" style="width: 75%;" placeholder="Pérez Pérez" required> <br>
+            <br>
+            <div>
+                <label for="punto" class="texto"><strong>Indique su punto de recogida</strong> <br></label>
+                <input type="radio" name="punto" id="este"> <label for="este" class="texto">Matanzas Este</label> <br>
+                <input type="radio" name="punto" id="oeste"> <label for="oeste" class="texto"> Matanzas Oeste</label>
+                <br>
+                <input type="radio" name="punto" id="versalles"> <label for="versalles" class="texto">Versalles</label>
+                <br>
+                <input type="radio" name="punto" id="pueblonuevo"> <label for="pueblonuevo" class="texto">Pueblo
+                    Nuevo</label> <br>
+                <input type="radio" name="punto" id="pastorita"> <label for="pastorita" class="texto">Pastorita</label>
+                <br>
+                <input type="radio" name="punto" id="local" checked> <label for="local" class="texto">Nuestro Local</label> <br>
+
+            </div>
+            <br>
+
+            <label for="cofee" class="texto"><strong>Seleccione su café:</strong></label>
+            <select name="" id="cofee" required>
+                <option value="1">Expresso</option>
+                <option value="2">Cortado</option>
+                <option value="3">Capuchino</option>
+                <option value="4">Café Leche</option>
+                <option value="5">Americano</option>
+                <option value="6">Latte</option>
+                <option value="7">Moca </option>
+                <option value="8">Bombón</option>
+            </select>
+            <br> <br>
+            <label for="cant" class="texto"><strong>Cantidad:</strong> </label>
+            <input type="number" id="cant" min="1" max="15" style="width: 10%;" required><br>
+            <br><strong>Su teléfono de contacto: </strong> <br>
+            +53<input type="tel" name="tel" id="" minlength="8" maxlength="8" required>
+            <p style="display: none;" id="telInfo"></p>
+            <br><br>
+            <input type="submit" class="button" value="Enviar" onclick="">
+        </form>
+        
+        <hr>
+    </center>
+    <footer>
+        <p>Leonardo Fundora Luis &copy 2022</p>
+    </footer>
+</body>
+
+</html>

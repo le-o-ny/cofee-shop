@@ -1,0 +1,48 @@
+{
+    "pedidos": [
+        {
+            "id": "001",
+            "cafe": "Expresso",
+            "cant": "2",
+            "tel": "55216654",
+            "nombre": "Leonardo",
+            "apellidos": "Fundora Luis",
+            "pto": "5",
+            "estado": "1",
+            "precio":"30.00"
+        },
+        {
+            "id": "002",
+            "cafe": "Americano",
+            "cant": "1",
+            "tel": "53360646",
+            "nombre": "Marcos",
+            "apellidos": "Luis Denis",
+            "pto": "5",
+            "estado": "1",
+            "precio": "40.00"
+        },
+        {
+            "id": "003",
+            "cafe": "Latte",
+            "cant": "4",
+            "tel": "53520618",
+            "nombre": "Javier",
+            "apellidos": "González Muñiz",
+            "pto": "3",
+            "estado": "0",
+            "precio": "60.00"
+        },
+        {
+            "id": "004",
+            "cafe": "Cortado",
+            "cant": "3",
+            "tel": "55858739",
+            "nombre": "Ana",
+            "apellidos": "Rodríguez García",
+            "pto": "1",
+            "estado": "0",
+            "precio": "40.00"
+        }
+    ]
+}

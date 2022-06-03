@@ -1,0 +1,189 @@
+body {
+  background-color: blanchedalmond;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  line-height: 25px;
+  margin: 0;
+}
+form {
+  background-color: white;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 00px 0px 50px sienna;
+  margin: 40px;
+  transition: box-shadow 1s;
+}
+form:hover{
+  box-shadow: 00px 0px 20px #993319;
+}
+img {
+  border-radius: 20px;
+  box-shadow: 00px 0px 50px sienna;
+  margin: 40px;
+  transition: box-shadow 0.5s;
+}
+
+.whiteBox {
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 00px 0px 50px sienna;
+  margin: 40px;
+  transition: box-shadow 0.5s;
+}
+.whiteBox a {
+  color: black;
+  text-decoration: none;
+}
+.whiteBox:hover {
+  box-shadow: 0px 0px 20px #993319;
+}
+
+#logo {
+  border-radius: 100%;
+  box-shadow: 00px 0px 50px sienna;
+  max-width: 200px;
+}
+
+a img:hover, #logo:hover{
+  box-shadow: 00px 0px 20px #993319;
+}
+
+select {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+.button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+hr {
+  border-width: 4px;
+  border-bottom: 0ch;
+  width: 5%;
+  border-style: dotted;
+  border-color: sienna;
+}
+
+nav {
+  width: 100%;
+  top: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+footer {
+  text-align: center;
+}
+
+.navl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: sienna;
+}
+
+.navl li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px 6px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #993319;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"], button {
+  padding: 10px 19px;
+  margin: 20px;
+  background-color: #993319;
+  color: aliceblue;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 0px 30px sienna;
+  transition: background-color 1s;
+  transition: box-shadow 1s;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover, 
+button:hover {
+  padding: 10px 19px;
+  margin: 20px;
+  background-color: #993319;
+  color: aliceblue;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 0px 10px sienna;
+}
+
+input, textarea{
+  padding: 3px;
+  margin: 3px;
+  transition: box-shadow 1s;
+}
+input:focus, textarea:focus{
+  box-shadow:0px 0px 10px #993319;
+}
+
+.tablaDinamica{
+  text-align: center;
+  /* border:1px;
+  border-style: solid; */
+  border-color: #993319;
+  background-color: white;
+  border-spacing: 0px;
+  box-shadow: 0px 0px 50px #993319;
+  margin: 40px;
+  border-radius: 10px;
+
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.tablaDinamica td,th{
+  padding: 20px;
+}
+
+
+.tablaDinamica tr:first-child{
+  color: aliceblue;
+  border-spacing: 0px;
+  background-color: #993319;
+}
+
+.css-mine {
+  margin-top: 2em;
+  clear: both;
+}
+
+#motivacion{
+  margin-right: 20px;
+  color:white;
+}
+
+
+

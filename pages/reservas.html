@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/styles/pedidos_style.css">
+    <title>Reservas</title>
+    <script src="../resources/script.js"></script>
+</head>
+
+<body>
+
+    <center>
+        <nav>
+            <ul class="navl">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/cafes.html">Cafés</a></li>
+                <li><a href="../pages/upps.html">Tés</a></li>
+                <li><a href="../pages/upps.html">Bebidas</a></li>
+                <li><a href="../pages/upps.html">Sandwich</a> </li>
+                <li><a href="../pages/upps.html">Frutos Secos</a> </li>
+                <div style="float: right;">
+                    <li><a href="../pages/pedidos.html">Pedidos</a> </li>
+                    <li class="active"><a href="../pages/reservas.html">Reservas</a> </li>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <a href="../index.html"><img src="../resources/images/logo.jpg" alt="Logotipo Por Amor Al Arte" width="100"
+                id="logo" /></a>
+        <h1 class="texto">Haga su reserva para nuestro local</h1>
+        <hr>
+        <h2 class="texto"> <strong>A continuación, inserte sus datos:</strong> </h2>
+        
+        <form action="waitemail.html" onsubmit="return validateFormReserva()" name="reserva">
+            <label for="name" class="texto"><strong>Nombre: </strong> <br></label>
+            <input type="text" id="name" style="width: 75%;" placeholder="Pepe Juan" required> <br>
+            <label for="name" class="texto" ><strong>Apellidos:</strong> <br></label>
+            <input type="text" id="last" style="width: 75%;" placeholder="Pérez Pérez" required> <br>
+            <br>
+            <label for="dateR"><strong>Indique la fecha y hora en que desea reservar</strong></label><br>
+            <input type="datetime-local" name="datetime" id="dateR" min="" required><br>
+            <label for="time" style="font-size: medium; font-style: italic;"><br>
+                Tenga en cuenta nuestros horarios. <strong>Estamos abiertos:</strong> <br>
+                De lunes a jueves, de 10:00 am a 10:00 pm <br>
+                De viernes a domingo, de 10:00 am a 12:00 am <br>
+                Tenga en cuenta reservar una hora antes de nuestro cierre<br>
+            </label>
+
+            <br>
+            <label for="cantP" class="texto"><strong>Cantidad de personas:</strong> </label>
+            <input type="number" id="cantP" min="1" max="10" style="width: 10%;" required><br>
+            <strong>Su e-mail de contacto: </strong> <input type="email" name="email" id="" required placeholder="pepe@xaamail.com"><br>
+            <br>
+            <input type="submit" class="button" value="Pedir reserva">
+        </form>
+
+        <hr>
+    </center>
+    <footer>
+        <p>Leonardo Fundora Luis &copy 2022</p>
+    </footer>
+</body>
+
+</html>
