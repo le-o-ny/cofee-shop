@@ -18,14 +18,17 @@ form:hover{
   box-shadow: 00px 0px 20px #993319;
 }
 img {
-  width:300px;
-  height:160px;
-  max-width: 60%;
-  max-height: 30%;
   border-radius: 20px;
   box-shadow: 00px 0px 50px sienna;
   margin: 40px;
   transition: box-shadow 0.5s;
+}
+
+.image{
+  width:300px;
+  height:160px;
+  max-width: 60%;
+  max-height: 30%;
 }
 
 
