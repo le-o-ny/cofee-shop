@@ -1,0 +1,14 @@
+{
+    "opinionesWeb": [
+        {
+            "id":"1",
+            "selections":["1","2"],
+            "details":"Nada que añadir"
+        },
+        {
+            "id":"2",
+            "selections":["3"],
+            "details":"Además no me muestra el contenido"
+        }
+    ]
+}

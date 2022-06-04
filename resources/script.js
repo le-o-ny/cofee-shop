@@ -73,6 +73,65 @@ function tablaDePedidos() {
     mytable.classList.add("tablaDinamica");
   }
 }
+/**
+ * Opinions about service. Dynamic table generator function
+ */
+function tablaDeOpinionesServicio() {
+  readTextFile("../resources/json/opiniones_servicio.json", function (text) {
+    var json = JSON.parse(text);
+    //console.log(json);
+    processData(json);
+  });
+  /**
+   * This function must be called after reading JSON data
+   */
+  function processData(json) {
+    const opinionesServicio = json.opinionesServicio;
+    opinionesServicio.forEach((opinion) => {
+      opinion.percentage = opinion.percentage * 100;
+      opinion.percentage = opinion.percentage + " %";
+    });
+
+    const headers = ["Id", "% de Satisfacción", "Detalles"];
+
+    let txt = buildTable(opinionesServicio, headers);
+    document.getElementById("wrapper").innerHTML = txt;
+
+    // add class dinamically
+    var mytable = document.getElementsByTagName("table")[0];
+    mytable.classList.add("tablaDinamica");
+  }
+}
+/**
+ * Opinions about how is the web is working. Dynamic table generator function.
+ */
+function tablaDeOpinionesWeb() {
+  readTextFile("../resources/json/opiniones_web.json", function (text) {
+    var json = JSON.parse(text);
+    //console.log(json);
+    processData(json);
+  });
+  /**
+   * This function must be called after reading JSON data
+   */
+  function processData(json) {
+    const opinionesWeb = json.opinionesWeb;
+    opinionesWeb.forEach((opinion) => {
+      opinion.selections.forEach((select) => { //NOT WORKING
+        select = setIssue(select);
+      });  
+    });
+
+    const headers = ["Id", "Problemas", "Detalles"];
+
+    let txt = buildTable(opinionesWeb, headers);
+    document.getElementById("wrapper").innerHTML = txt;
+
+    // add class dinamically
+    var mytable = document.getElementsByTagName("table")[0];
+    mytable.classList.add("tablaDinamica");
+  }
+}
 
 //FORMS DATA VALIDATORS
 /**
@@ -136,7 +195,7 @@ async function generarFraseTrabajador() {
   //console.log("first")
   document.getElementById("motivacion").innerHTML = `<li">${
     frasesTrabajador[Math.floor(Math.random() * frasesTrabajador.length)]
-  }</li>`;
+    }</li>`;
   // alert(frasesTrabajador[Math.floor(Math.random() * frasesTrabajador.length)]); //
 }
 
@@ -154,6 +213,21 @@ function setEstado(_pedido) {
   } else {
     return "Por entregar";
   }
+}
+/**
+ * Provisional login function
+ */
+function loginU (){
+  //console.log(document.forms["login"]["pass"]);
+  if(document.forms["login"]["user"].value==="root" && document.forms["login"]["pass"].value==="root"){
+    return true;
+  }
+  else{
+    alert(
+      "Usuario y contraseña incorrectos."
+    );
+    return false;
+  } 
 }
 /**
  * 
@@ -177,3 +251,25 @@ function setPto(_pedido) {
       return "Nuestro Local";
   }
 }
+
+function setIssue(_select) {
+  switch (_select) {
+    case "1":
+      return "No se muestra correctamente en un dispositivo móvil";
+    case "2":
+      return "No cargan las imágenes";
+    case "3":
+      return "Diseño incorrecto";
+    case "4":
+      return "No envía mis pedidos";
+    case "5":
+      return "No envía mis reservaciones";
+    case "6":
+      return "Carga muy lento";
+    case 7:
+      return "Muestra el error Cannot GET..."
+    default:
+      return "Ninguna de las selecciones";
+  }
+}
+
