@@ -1,0 +1,24 @@
+{
+    "opinionesServicio": [
+        {
+            "id":"1",
+            "percentage":"0.99",
+            "details":"Buen servicio."
+        },
+        {
+            "id":"2",
+            "percentage":"0.75",
+            "details":""
+        },
+        {
+            "id": "3",
+            "percentage":"0.35",
+            "details":"Mala atención. Buenas ofertas."
+        },
+        {
+            "id": "4",
+            "percentage":"1.00",
+            "details":"No podría recomendarlo más. Me encantó el servicio y lo que consumí."
+        }
+    ]
+}
