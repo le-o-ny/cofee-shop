@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 body {
   background-color: blanchedalmond;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
+  font-family: 'Source Sans Pro', sans-serif;
+ 
   line-height: 25px;
   margin: 0;
 }
@@ -60,14 +62,11 @@ a img:hover, #logo:hover{
 }
 
 select {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .button {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
-}
+  font-family: 'Source Sans Pro', sans-serif;}
 hr {
   border-width: 4px;
   border-bottom: 0ch;
