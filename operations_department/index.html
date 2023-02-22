@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de pedidos</title>
+    <link rel="stylesheet" href="../resources/styles/pedidos_style.css">
+    <script src="../resources/util.js"></script> <!-- script goes here-->
+    <script src="../resources/script.js"></script> <!-- script goes here-->
+</head>
+<body onload="tablaDePedidos(); generarFraseTrabajador();">
+    <center>
+        <nav>
+            <ul class="navl">
+                <li><a href="lista_pedidos.html">Pedidos</a></li>
+                <li><a href="lista_reservas.html">Reservas</a></li>
+                <li><a href="lista_opiniones_web.html">Problemas web</a></li>
+                <li><a href="lista_opiniones_servicio.html">Opiniones</a></li>
+                <div style="float: right;">
+                    <li class="active"><a href="#">Inicio</a></li>
+                    <li><a href="login.html">Cerrar Sesión</a></li>
+                </div>
+                
+            </ul>
+        </nav>
+        <br>
+        <img onclick="generarFraseTrabajador()" src="../resources/images/logo.jpg" alt="Logotipo Por Amor Al Arte" width="100" id="logo" />
+        <p id="motivacion" style="color: black;">Frase<p>
+        <h1>Departamento de operaciones</h1>
+        <div class="whiteBox">
+            <a href="lista_pedidos.html">Lista de pedidos</a>
+        </div>
+        <div class="whiteBox">
+            <a href="lista_reservas.html">Lista de reservas</a>
+        </div>
+        <div class="whiteBox">
+            <a href="lista_opiniones_web.html">Problemas reportados con la web</a>
+        </div>
+        <div class="whiteBox">
+            <a href="lista_opiniones_servicio.html">Opiniones de los clientes</a>
+        </div>
+
+
+        <hr>
+        <p>Leonardo Fundora Luis &copy 2022</p>
+    </center>
+    
+    
+</body>
+</html>
